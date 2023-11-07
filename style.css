@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#navbar ul{
+    list-style: none;
+}
+#navbar ul li{
+    color: #333;
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+    /* li me jo ul ha usko absolute position deni hogi */
+}
+#navbar ul li a{
+    color: #333;
+    text-decoration: none;
+}
+
+/* now hide nested ul and its li */
+#navbar ul li ul{
+    display: none;
+}
+#navbar ul li:hover{
+    cursor: pointer;
+    background: coral;
+    color: #fff;
+}
+#navbar ul li:hover a{
+   
+    color: #fff;
+}
+#navbar ul li:hover a{
+    color: #fff;
+}
+/* nested ul show */
+#navbar ul li:hover ul{
+    /* main li ko hover kro to nested ko show krdo */
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 180px;
+    margin-top: 1rem;
+
+
+
+    /* is ul ko absolute is waja se di ha k ye apne parent li ki body me rahy */
+}
+#navbar ul li:hover ul li{
+    display: block;
+   
+    background-color: #e7e7e7;
+}
+#navbar ul li:hover ul li a{
+    color: #333;
+}
+
+#navbar ul li:hover ul li:hover{
+    background-color: #e0e0e0;
+    color: inherit;
+}
+#navbar ul li:hover ul li span{
+    float: right;
+    color: #fff;
+    background-color: coral;
+    padding: .2rem .5rem;
+    text-align: center;
+    font-size: .8rem;
+    border-radius: 5px;
+}
+#navbar ul li:hover ul li:hover span{
+    background-color: rgb(241, 151, 87);
+}
+
+
+
+
+
+#website{
+    /* display: flex; */
+    background-color: aqua;
+    height: 300px;
+    text-align: center;
+    padding-top: 9rem;
+}
